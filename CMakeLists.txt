@@ -17,10 +17,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Externals
-include("${CMAKE_SOURCE_DIR}/externals/spdlog.cmake")
+include("${CMAKE_SOURCE_DIR}/externals/raylib.cmake")
 
 # Executable
 file(GLOB SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 add_executable(${CMAKE_EXECUTABLE_NAME} ${SOURCES})
 
-target_link_libraries(${CMAKE_EXECUTABLE_NAME} PRIVATE spdlog)
+target_link_libraries(${CMAKE_EXECUTABLE_NAME} PRIVATE raylib)
