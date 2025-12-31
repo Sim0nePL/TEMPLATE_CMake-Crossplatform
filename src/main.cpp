@@ -29,15 +29,15 @@ int main (int argc, char *argv[]) {
 		return -1;
 	}
 
-  IMGUI_CHECKVERSION();
-  ImGui::CreateContext();
-  ImGuiIO& io = ImGui::GetIO(); (void)io;
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGuiIO& io = ImGui::GetIO(); (void)io;
 
-  ImGui::StyleColorsDark();
-  ImGuiStyle& style = ImGui::GetStyle();
-	
+	ImGui::StyleColorsDark();
+	ImGuiStyle& style = ImGui::GetStyle();
+
 	ImGui_ImplGlfw_InitForOpenGL(window, true);
- 	ImGui_ImplOpenGL3_Init("#version 330");
+	ImGui_ImplOpenGL3_Init("#version 330");
 
 
 	while (!glfwWindowShouldClose(window)) {
