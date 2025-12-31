@@ -58,7 +58,7 @@ int main (int argc, char *argv[]) {
 		ImGui::End();
 
 		ImGui::Render();
-    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
 		// End of frame
 		glfwSwapBuffers(window);
